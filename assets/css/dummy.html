@@ -1,0 +1,199 @@
+<div class="carts-craft__banner">
+    <div class="block-effect" style="--td: 1.2s">
+        <div class="block-reveal" style="--d: .1s">
+            <h1>Ecommerce Managed Services</h1>
+        </div>
+        <div class="block-reveal" style="--d: .5s">
+            <p>Ecommerce management services involve outsourcing <br>
+                the Maintenance and evolution of your website and IT environment.</p>
+        </div>
+    </div>
+</div>
+
+
+
+/* block-$ */
+
+.block-effect {
+background: rgba(12, 113, 195, 0.6);
+
+}
+
+
+.block-reveal {
+--t: calc(var(--td) + var(--d));
+color: transparent;
+padding: 4px;
+position: relative;
+overflow: hidden;
+animation: revealBlock 0s var(--t) forwards;
+}
+
+.block-reveal h1 {
+color: var(--tertiary-color);
+}
+
+.block-reveal p {
+color: var(--tertiary-color);
+}
+
+.block-reveal::after {
+content: '';
+width: 0%;
+height: 100%;
+padding-bottom: 4px;
+position: absolute;
+top: 0;
+left: 0;
+background: var(--primary-color);
+animation: revealingIn var(--td) var(--d) forwards, revealingOut var(--td) var(--t) forwards;
+}
+
+
+/* animations */
+@keyframes revealBlock {
+100% {
+color: var(--primary-color);
+}
+}
+
+@keyframes revealingIn {
+
+0% {
+width: 0;
+}
+
+100% {
+width: 100%;
+}
+}
+
+@keyframes revealingOut {
+
+0% {
+transform: translateX(0);
+}
+
+100% {
+transform: translateX(100%);
+}
+}
+
+<!-- home annimation -->
+
+
+
+
+<!-- blog detail -->
+
+<div class="blog-details-section">
+    <div class="blog-details-section__grid ecommerce-container">
+        <div class="blog-details-section__main">
+            <div class="blog-details-section__main-img">
+                <img src="/images/blog-detail.png" alt="blog-detail">
+            </div>
+            <h1>lorem metus mattis tortor.</h1>
+            <div class="blog-details-section__main-update">
+                <span>Last Updated on September 06, 2023 By Shaikh Zoya</span>
+            </div>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laboriosam tenetur nesciunt
+                asperiores similique doloremque fugiat. Voluptatem amet deserunt hic in?</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi dolor optio voluptatem quia
+                cupiditate ab veritatis beatae tempora fugit. Modi, veritatis eius? Veritatis, quaerat!
+                Aliquid, deleniti officia! Consequuntur temporibus enim, autem non illum, ad rerum
+                dignissimos dolore modi excepturi debitis dolores praesentium ea reiciendis aperiam omnis
+                esse magni beatae! Et!</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta ducimus illum dolores
+                assumenda nisi ea iste harum repellat veniam quasi nam quas minima dignissimos pariatur
+                delectus magnam, nobis odio in neque consequatur totam inventore nihil quidem excepturi.
+                Tenetur, quisquam asperiores eaque laudantium ex exercitationem impedit beatae repellendus
+                quia dignissimos fugiat. Maiores cupiditate sunt error facilis vel, repellat quam
+                reprehenderit reiciendis.</p>
+        </div>
+        <div class="blog-details-section__related">
+            <h2 class="title-gap">Related Blogs</h2>
+            <div class="blog-details-section__related-content">
+                <div class="blog-details-section__related-img">
+                    <img src="/images/blog-detail.png" alt="blog-detail">
+                </div>
+                <div class="blog-details-section__related-update">
+                    <span>Last Updated on September 06, 2023 By Shaikh Zoya</span>
+                </div>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nam hic perferendis quibusdam
+                    fugiat
+                    cumque.</p>
+            </div>
+            <div class="blog-details-section__related-content">
+                <div class="blog-details-section__related-img">
+                    <img src="/images/blog-detail.png" alt="blog-detail">
+                </div>
+                <div class="blog-details-section__related-update">
+                    <span>Last Updated on September 06, 2023 By Shaikh Zoya</span>
+                </div>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nam hic perferendis quibusdam
+                    fugiat
+                    cumque.</p>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+
+
+.blog-details-section__grid {
+display: flex;
+gap: 40px;
+}
+
+.blog-details-section__main {
+padding: 50px;
+flex: 2;
+}
+
+.blog-details-section__main-img img {
+width: 100%;
+height: auto;
+}
+
+.blog-details-section__main {
+background-color: var(--secondary-color);
+}
+
+.blog-details-section__main-update {
+margin: 40px 0;
+}
+
+.blog-details-section__main-update span {
+color: var(--primary-color);
+font-size: 18px;
+}
+
+.blog-details-section__related {
+flex: 1;
+position: -webkit-sticky;
+position: sticky;
+top: 0;
+}
+
+.blog-details-section__related-img img {
+width: 100%;
+height: auto;
+}
+
+.blog-details-section__related-update {
+margin: 20px 0;
+}
+
+.blog-details-section__related-update span {
+color: var(--primary-color);
+font-size: 18px;
+}
+
+.blog-details-section__related-content {
+margin-top: 20px;
+}
+
+
+
+<!-- blog detail end -->

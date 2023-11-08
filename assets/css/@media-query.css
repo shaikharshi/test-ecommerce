@@ -1,0 +1,626 @@
+/* CSS rules for extra large devices */
+.ecommerce-container {
+    max-width: 80%;
+    padding: 1rem;
+    margin: 0 auto;
+}
+
+/* Extra small (mobile) */
+@media (min-width: 320px) and (max-width: 575px) {
+
+    /* CSS rules for extra small devices */
+    .ecommerce-container {
+        max-width: 100%;
+        padding: 1rem;
+        margin: 0 auto;
+    }
+
+    /* news letter */
+    .news-letter-button {
+        width: 34%;
+    }
+
+    /* news letter end */
+}
+
+/* Small (mobile landscape) */
+@media (min-width: 576px) and (max-width: 767px) {
+
+    /* CSS rules for small devices */
+    .ecommerce-container {
+        max-width: 100%;
+        padding: 1rem;
+        margin: 0 auto;
+    }
+}
+
+/* Medium (tablet) */
+@media (min-width: 768px) and (max-width: 991px) {
+
+    /* CSS rules for medium devices */
+    .ecommerce-container {
+        max-width: 100%;
+        padding: 1rem;
+        margin: 0 auto;
+    }
+}
+
+/* Large (desktop) */
+@media (min-width: 992px) and (max-width: 1199px) {
+
+    /* CSS rules for large devices */
+    .ecommerce-container {
+        max-width: 100%;
+        padding: 1rem;
+        margin: 0 auto;
+
+    }
+}
+
+/* Extra large (desktop) */
+@media (min-width: 1200px) {}
+
+
+
+
+@media screen and (max-width: 360px) {
+    .carts-craft-home-card__content img {
+        width: 100px;
+        height: 100px;
+    }
+
+
+}
+
+
+@media screen and (max-width: 768px) {
+    .ecomm-navbar .logo {
+        width: auto;
+        justify-content: center;
+    }
+
+    .ecomm-navbar .ecomm-navbar__links {
+        position: fixed;
+        z-index: 9;
+        left: 0;
+        right: 0;
+        top: 90px;
+        bottom: 100%;
+        width: auto;
+        height: auto;
+        flex-direction: column;
+        justify-content: space-evenly;
+        background-color: var(--primary-color);
+        overflow: hidden;
+        box-sizing: border-box;
+        transition: all .5s ease-in-out;
+    }
+
+
+    .ecomm-navbar :checked~.ecomm-navbar__links {
+        bottom: 0;
+    }
+
+    .ecomm-navbar .icon-burger {
+        display: block;
+    }
+
+    .ecomm-navbar :checked~.icon-burger .line:nth-child(1) {
+        transform: translateY(10px) rotate(225deg);
+    }
+
+    .ecomm-navbar :checked~.icon-burger .line:nth-child(3) {
+        transform: translateY(-10px) rotate(-225deg);
+    }
+
+    .ecomm-navbar :checked~.icon-burger .line:nth-child(2) {
+        opacity: 0;
+    }
+
+    .carts-craft__home-grid {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto;
+    }
+
+    .carts-craft__home-image {
+        grid-row: 1;
+    }
+
+    .carts-craft__home-text {
+        grid-row: 2;
+    }
+
+    /* home card */
+    .carts-craft-home-card {
+        grid-template-columns: 1fr;
+    }
+
+
+
+    /* cta */
+    .carts-craft-cta__grid {
+        flex-direction: column-reverse;
+        flex-wrap: wrap;
+    }
+
+    .form-input input,
+    .form-input textarea {
+        width: 100%;
+    }
+
+    /* cta end */
+
+    /* news letter */
+    .carts-craft-news-letter__grid {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 30px;
+    }
+
+
+    /* news letter end */
+
+
+
+    /* about page */
+
+    .carts-craft-company-overview__grid {
+        grid-template-columns: 1fr;
+    }
+
+
+    .carts-craft-mission__grid {
+        grid-template-columns: 1fr;
+    }
+
+    .carts-craft-mission__grid-content {
+        padding-left: 30px;
+    }
+
+    .carts-craft-vision__grid {
+        grid-template-columns: 1fr;
+    }
+
+    /* about page end */
+
+    /* service page  */
+
+    .carts-craft-service-main__grid {
+        grid-template-columns: 1fr;
+    }
+
+    .carts-craft-service-main-content {
+        padding: 20px;
+    }
+
+    /* service page end */
+
+    /* industries */
+    .carts-craft-industy-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .carts-craft-industy-image {
+        grid-row: 1;
+    }
+
+    .carts-craft-industy-text {
+        grid-row: 2;
+    }
+
+    /* industries end */
+
+    /* solutions */
+
+    .carts-craft-solutions-main__grid {
+        grid-template-columns: 1fr;
+    }
+
+    .carts-craft-solutions-main__grid-content {
+        padding: 10px;
+        margin: 0;
+    }
+
+    .carts-craft-solutions-main__grid img {
+        width: 100%;
+        height: auto;
+    }
+
+    /* solution overlap card */
+
+    .solutions-overlap-section__grid {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .solutions-overlap-section__grid-content {
+        padding: 10px;
+        margin: 0;
+    }
+
+    .solutions-overlap-section__grid img {
+        width: 100%;
+        height: auto;
+    }
+
+    /* solutions end */
+
+
+}
+
+
+
+
+
+/* Extra small (mobile) */
+@media (min-width: 320px) and (max-width: 575px) {
+
+    .carts-craft-home-partners__grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+
+
+    .carts-craft-home-partners__grid img {
+        width: 135px;
+        height: 122px;
+    }
+
+    .carts-craft-home-blog__grid {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .carts-craft-home-service__grid {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .blog-footer a {
+        font-size: 14px;
+    }
+
+
+    /* news letter */
+    .carts-craft-news-letter__grid {
+        flex-direction: column;
+    }
+
+    .text-side,
+    .input-side {
+        flex: auto;
+        margin-right: 0;
+    }
+
+    /* news letter end */
+
+    /* footer */
+    .carts-craft-footer__footer-grid {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+
+    /* footer end */
+
+    /* ABOUT PAGE */
+    .carts-craft-why-us__grid {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    /* ABOUT PAGE END */
+
+    /* service page */
+
+    .carts-craft-service-grid {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 30px;
+    }
+
+
+    .carts-craft-service-grid__card-img img {
+        width: 100%;
+        height: auto;
+    }
+
+    /* service page end */
+
+
+    /* career */
+    .career-section .career-section__grid {
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+
+    /* career end */
+
+    /* solution l2 */
+    .solutions-l2-main__grid {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+
+    .solutions-l2-card-section__grid {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+
+    .solutions-l2-card-head img {
+        width: 140px;
+        height: auto;
+    }
+
+    /* solution l2 end */
+
+    /* icons */
+    .icon-bar {
+        display: none;
+    }
+
+    /* icons end */
+
+}
+
+
+/* Small (mobile landscape) */
+@media (min-width: 576px) and (max-width: 767px) {
+    .carts-craft-home-partners__grid {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+    }
+
+
+    .carts-craft-home-partners__grid img {
+        width: 150px;
+        height: 150px;
+    }
+
+
+    .carts-craft-home-blog__grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .carts-craft-home-service__grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+
+    /* footer */
+    .carts-craft-footer__footer-grid {
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 84px;
+        row-gap: 30px;
+    }
+
+    /* footer end */
+
+    /* ABOUT PAGE */
+    .carts-craft-why-us__grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    /* ABOUT PAGE END */
+
+    /* service page */
+
+    .carts-craft-service-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 30px;
+    }
+
+    .carts-craft-service-grid__card-img img {
+        width: 100%;
+        height: auto;
+    }
+
+    /* service page end */
+
+
+
+    /* career */
+    .career-section .career-section__grid {
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+
+    /* career end */
+
+
+    /* solution l2 */
+    .solutions-l2-main__grid {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+
+
+    .solutions-l2-card-section__grid {
+        grid-template-columns: 1fr;
+        gap: 60px;
+    }
+
+    .solutions-l2-card-head img {
+        width: 193px;
+        height: 159px;
+    }
+
+    /* solution l2 end */
+
+}
+
+
+/* Medium (tablet) */
+@media (min-width: 768px) and (max-width: 991px) {
+    .ecomm-navbar .ecomm-navbar__links a {
+        font-size: 16px;
+    }
+
+    .ecomm-navbar .logo {
+        font-size: 22px;
+    }
+
+    .carts-craft-home-card__content img {
+        width: 130px;
+        height: 130px;
+    }
+
+    .carts-craft-home-card {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+
+    .carts-craft-home-service__grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .carts-craft-home-blog__grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .carts-craft-home-partners__grid {
+        grid-template-columns: repeat(3, 1fr);
+        row-gap: 20px;
+    }
+
+
+
+    .carts-craft-home-partners__grid img {
+        width: 150px;
+        height: 150px;
+    }
+
+
+    /* footer */
+    .carts-craft-footer__footer-grid {
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 160px;
+        row-gap: 30px;
+    }
+
+    /* footer end */
+
+
+    /* about page */
+    .carts-craft-why-us__grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    /* about page end */
+
+
+    /* service page */
+
+    .carts-craft-service-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 30px;
+    }
+
+    .carts-craft-service-grid__card-img img {
+        width: 100%;
+        height: auto;
+    }
+
+    /* service page end */
+
+    /* solutions */
+
+    .carts-craft-solutions-main__grid {
+        grid-template-columns: 1fr;
+    }
+
+    .carts-craft-solutions-main__grid-content {
+        padding: 10px;
+        margin: 0;
+    }
+
+    .carts-craft-solutions-main__grid img {
+        width: 100%;
+        height: auto;
+    }
+
+    /* solution overlap card */
+
+    .solutions-overlap-section__grid {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .solutions-overlap-section__grid-content {
+        padding: 10px;
+        margin: 0;
+    }
+
+    .solutions-overlap-section__grid img {
+        width: 100%;
+        height: auto;
+    }
+
+    /* solutions end */
+
+    /* soltions l2 */
+
+
+    .solutions-l2-card-section__grid {
+        gap: 60px;
+    }
+
+    .solutions-l2-card-head {
+        flex-direction: column-reverse;
+    }
+
+    .solutions-l2-card-head img {
+        width: 100%;
+        height: auto;
+    }
+
+    /* soltions l2 end */
+
+    /* career */
+
+    .career-section__grid-img {
+        flex: 1;
+    }
+
+    .career-section__grid-content {
+        flex: 1;
+    }
+
+    .career-section__grid-img {
+        margin-left: 26px;
+    }
+
+    /* career end */
+}
+
+/* Large (desktop) */
+@media (min-width: 992px) and (max-width: 1199px) {
+    .ecomm-navbar .ecomm-navbar__links a {
+        font-size: 18px;
+    }
+
+    .carts-craft-home-card__content img {
+        width: 75px;
+        height: 75px;
+    }
+
+    .carts-craft-home-partners__grid img {
+        width: 135px;
+        height: 122px;
+    }
+
+    .ecomm-navbar .logo {
+        font-size: 22px;
+    }
+
+    .career-section__grid-img {
+        flex: 1;
+    }
+
+    .career-section__grid-content {
+        flex: 1;
+    }
+
+    .career-section__grid-img {
+        margin-left: 26px;
+    }
+}
+
+/* Extra large (desktop) */
+@media (min-width: 1200px) {}
