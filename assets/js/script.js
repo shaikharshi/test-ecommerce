@@ -26,21 +26,39 @@ for (i = 0; i < acc.length; i++) {
 
 
 // auto increment
-const counts = document.querySelectorAll('.count');
-
-counts.forEach(count => {
-    const updateCount = () => {
+// Function to start the counting animation
+function startCountAnimation() {
+    const counts = document.querySelectorAll('.count');
+    counts.forEach(count => {
         const target = +count.getAttribute('data-target');
-        const countValue = +count.innerText;
         const increment = target / 100;
+        let countValue = 0;
 
-        if (countValue < target) {
-            count.innerText = Math.ceil(countValue + increment);
-            setTimeout(updateCount, 10);
-        } else {
-            count.innerText = target;
+        const updateCount = () => {
+            if (countValue < target) {
+                countValue += increment;
+                count.innerText = Math.ceil(countValue);
+                requestAnimationFrame(updateCount);
+            } else {
+                count.innerText = target;
+            }
+        };
+
+        updateCount();
+    });
+}
+
+// Set up the Intersection Observer
+const section = document.querySelector('.carts-craft-why-us__grid');
+const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            // The section is in view, start counting animation
+            startCountAnimation();
+            observer.unobserve(section); // Stop observing once started
         }
-    };
-
-    updateCount();
+    });
 });
+
+// Start observing the section
+observer.observe(section);

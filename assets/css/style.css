@@ -29,7 +29,7 @@ strong {
     --text-m: clamp(1.13rem, 0.98rem + 0.73vw, 1.76rem);
     --text-l: clamp(1.27rem, 1.10rem + 0.83vw, 1.98rem);
     --text-xl: clamp(1.42rem, 1.24rem + 0.93vw, 2.23rem);
-    --text-xxl: clamp(1.60rem, 1.39rem + 1.04vw, 2.50rem);
+    --text-xxl: clamp(1.25rem, calc(1.25rem + ((1vw - 0.2rem) * 0.9494)), 2.1875rem);
 }
 
 
@@ -107,8 +107,16 @@ input[type=text]:focus {
     outline: 2px solid var(--primary-color);
 }
 
+input[type=number]:focus {
+    outline: 2px solid var(--primary-color);
+}
+
 input[type=email]:focus {
-    outline: 1px solid var(--primary-color);
+    outline: 2px solid var(--primary-color);
+}
+
+textarea:focus {
+    outline: 2px solid var(--primary-color);
 }
 
 /* home page */
@@ -642,7 +650,7 @@ input[type=email]:focus {
 }
 
 .count {
-    font-size: 2rem;
+    font-size: 4rem;
     font-weight: bold;
 }
 
@@ -1140,7 +1148,12 @@ input[type=email]:focus {
     margin-top: 20px;
 }
 
-
+.blog-list li {
+    list-style: disc;
+    line-height: 1.5;
+    margin-left: 40px;
+    color: var(--text-color);
+}
 
 /* blog details end */
 
@@ -1364,3 +1377,135 @@ input[type=email]:focus {
 }
 
 /* sociall share end */
+
+
+
+/* career l2 */
+.career-description-section__grid {
+    display: grid;
+    grid-template-columns: 65% 35%;
+    gap: 20px;
+
+}
+
+.career-description-main {
+    background-color: var(--secondary-color);
+    padding: 30px;
+}
+
+.career-description-main-description {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.career-description-main-description h6 {
+    margin-top: 30px;
+}
+
+.career-description-form {
+    background-color: var(--secondary-color);
+    height: fit-content;
+    padding: 20px;
+}
+
+.career-description-main-description h6 {
+    color: var(--primary-color);
+}
+
+.career-form {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+label {
+    color: var(--primary-color);
+    font-weight: 400;
+    font-size: 16px;
+}
+
+.career-form-input input {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    border: none;
+}
+
+.career-form-input textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    border: none;
+}
+
+.career-description-form h5 {
+    text-align: center;
+}
+
+.career-form-input-flex {
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+}
+
+/*custom inpu file*/
+.custom-file-input {
+    color: transparent;
+
+}
+
+.custom-file-input::-webkit-file-upload-button {
+    visibility: hidden;
+}
+
+.custom-file-input::before {
+    content: "▲ Upload CV";
+    color: #fff;
+    background: var(--primary-color);
+    padding: 10px 22px;
+    cursor: pointer;
+}
+
+.custom-file-input:focus {
+    outline: none !important;
+
+}
+
+.career-description-list li::marker {
+    color: var(--primary-color);
+    font-size: 18px;
+}
+
+.career-description-list li {
+    list-style: disc;
+    line-height: 1.5;
+    margin-left: 40px;
+    color: var(--text-color);
+}
+
+/* career l2 end */
+
+
+
+/* contact */
+
+.contact-us-section {
+    border: 1px solid black;
+    background-color: var(--tertiary-color);
+}
+
+.contact-us-section__grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-us-section__grid img {
+    width: 100%;
+    height: auto;
+}
+
+/* contact us */

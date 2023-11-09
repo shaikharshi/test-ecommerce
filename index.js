@@ -1,4 +1,3 @@
-require('dotenv').config();
 const express = require('express');
 const path = require('path')
 // const nodemailer = require('nodemailer');
@@ -35,6 +34,14 @@ app.get("/blog", (req, res) => {
   res.render('blog')
 });
 
+app.get("/blog-details", (req, res) => {
+  res.render('blog-details')
+});
+
+app.get("/contact-us", (req, res) => {
+  res.render('contact-us')
+});
+
 app.get("/solutions", (req, res) => {
   res.render('solutions')
 });
@@ -64,9 +71,13 @@ app.get("/faq", (req, res) => {
   res.render('faq')
 });
 
-
 app.get("/careers", (req, res) => {
   res.render('careers')
+});
+
+app.get('/careers/:slug', async (req, res) => {
+  const slug = req.params.slug;
+  res.render(slug);
 });
 
 // this is for contact start

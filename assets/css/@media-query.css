@@ -245,6 +245,8 @@
     /* solutions end */
 
 
+
+
 }
 
 
@@ -356,6 +358,22 @@
 
     /* icons end */
 
+    /* career l2  */
+    .career-description-section__grid {
+        display: grid;
+        grid-template-columns: 100%;
+        gap: 30px;
+
+    }
+
+    .career-form-input-flex {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    /* career l2 end */
+
 }
 
 
@@ -442,6 +460,18 @@
     }
 
     /* solution l2 end */
+
+
+
+    /* career l2  */
+    .career-description-section__grid {
+        display: grid;
+        grid-template-columns: 100%;
+        gap: 30px;
+
+    }
+
+    /* career l2 end */
 
 }
 
@@ -587,6 +617,8 @@
     }
 
     /* career end */
+
+
 }
 
 /* Large (desktop) */
