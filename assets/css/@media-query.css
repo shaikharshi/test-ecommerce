@@ -252,6 +252,22 @@
 
     /* solutions end */
 
+    /* blog- deatils */
+
+    .blog-details-section__main {
+        padding: 20px;
+    }
+
+    .blog-details-section__grid {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        gap: 20px;
+        align-items: start;
+    }
+
+    /* blog- deatils end */
+
 
 }
 
