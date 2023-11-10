@@ -1,0 +1,4 @@
+User-agent: *
+Disallow: 
+
+Sitemap: https://ecomm-service-llo7.onrender.com/sitemap.xml

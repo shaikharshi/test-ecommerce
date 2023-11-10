@@ -65,7 +65,7 @@ h6 {
 p {
     line-height: 1.6;
     color: var(--text-color);
-    font-size: clamp(15px, calc(1.125rem + ((1vw - 3.2px) * -0.2532)), 14px);
+    font-size: clamp(14px, calc(0.875rem + ((1vw - 3.2px) * 0.1266)), 16px);
 }
 
 address {
@@ -281,7 +281,11 @@ textarea:focus {
 
 .carts-craft-home-partners__grid img:hover {
     transform: scale(1.1);
-    background-color: rgba(12, 113, 195, 0.6);
+    transition: all .3s ease;
+    box-shadow:
+        inset 0 -3em 3em var(--tertiary-color),
+        0 0 0 2px white,
+        0.3em 0.3em 1em var(--primary-color);
 }
 
 /* partners end*/
@@ -1124,18 +1128,18 @@ textarea:focus {
     align-items: start;
 }
 
-.blog-details-section__main {
-    padding: 50px;
-    flex: 2;
-}
-
 .blog-details-section__main-img img {
     width: 100%;
     height: auto;
 }
 
 .blog-details-section__main {
+    padding: 50px;
+    flex: 2;
     background-color: var(--secondary-color);
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
 }
 
 .blog-details-section__main-update {
@@ -1169,12 +1173,12 @@ textarea:focus {
 }
 
 .blog-details-section__related-content {
-    margin-top: 20px;
+    margin-top: 70px;
 }
 
 .blog-list li {
     list-style: disc;
-    line-height: 1.5;
+    line-height: 1.8;
     margin-left: 40px;
     color: var(--text-color);
 }
