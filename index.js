@@ -1,6 +1,7 @@
+require('dotenv').config();
 const express = require('express');
 const path = require('path')
-// const nodemailer = require('nodemailer');
+const nodemailer = require('nodemailer');
 
 const app = express();
 
@@ -34,9 +35,11 @@ app.get("/blog", (req, res) => {
   res.render('blog')
 });
 
-app.get("/blog-details", (req, res) => {
-  res.render('blog-details')
+app.get('/blog/:slug', async (req, res) => {
+  const slug = req.params.slug;
+  res.render(slug);
 });
+
 
 app.get("/contact-us", (req, res) => {
   res.render('contact-us')
@@ -81,8 +84,8 @@ app.get('/careers/:slug', async (req, res) => {
 });
 
 // this is for contact start
-app.post('/contact', async (req, res) => {
-  const { name, email, phone, message } = req.body;
+app.post('/contact-us', async (req, res) => {
+  const { name, email, message } = req.body;
 
   const transporter = nodemailer.createTransport({
     service: 'SMTP',
@@ -98,8 +101,8 @@ app.post('/contact', async (req, res) => {
   const mailOptions = {
     from: process.env.GMAIL,
     to: "development@sovorun.com",
-    subject: subject,
-    text: `Name: ${name}\nEmail: ${email}\nPhone: ${phone}\nPhone: ${message}`
+    subject: email,
+    text: `Name: ${name}\nEmail: ${email}\nMessage: ${message}`
   };
 
   transporter.sendMail(mailOptions, (error, info) => {
@@ -113,4 +116,42 @@ app.post('/contact', async (req, res) => {
   });
 });
 // this is for contact end
+
+
+// NEWSLETTER
+
+app.post('/news-letter', async (req, res) => {
+  const abc = req.body.email;
+
+  const transporter = nodemailer.createTransport({
+    service: 'SMTP',
+    host: 'smtp.hostinger.com',
+    port: 465,
+    secure: true,
+
+    auth: {
+      user: process.env.GMAIL,
+      pass: process.env.PASSWORD
+    }
+  });
+
+  const mailOptions = {
+    from: process.env.GMAIL,
+    to: abc,
+    subject: 'Newsletter Subscription Confirmation',
+    text: 'Thank you for subscribing to our newsletter!'
+  };
+
+  transporter.sendMail(mailOptions, (error) => {
+    if (error) {
+      console.error(error);
+
+    } else {
+      console.log('NewsLetter Email sent successfully');
+      res.redirect('/');
+    }
+  });
+});
+// NEWSLETTER END
+
 app.listen(PORT, () => console.log(`Server started on http://localhost:${PORT}`)); 

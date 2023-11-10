@@ -21,6 +21,14 @@
     }
 
     /* news letter end */
+
+
+    /* sectionnspacing */
+    .section-gap {
+        margin-bottom: 30px !important;
+    }
+
+    /* sectionnspacing */
 }
 
 /* Small (mobile landscape) */
@@ -84,7 +92,7 @@
         z-index: 9;
         left: 0;
         right: 0;
-        top: 90px;
+        top: 76px;
         bottom: 100%;
         width: auto;
         height: auto;
@@ -245,8 +253,6 @@
     /* solutions end */
 
 
-
-
 }
 
 
@@ -255,6 +261,7 @@
 
 /* Extra small (mobile) */
 @media (min-width: 320px) and (max-width: 575px) {
+
 
     .carts-craft-home-partners__grid {
         grid-template-columns: repeat(2, 1fr);
@@ -374,6 +381,26 @@
 
     /* career l2 end */
 
+
+    /* contact-s */
+
+    .contact-us-section {
+        position: relative;
+        bottom: 0;
+        left: 0;
+        transform: translateX(0%);
+        width: 100%;
+    }
+
+    .contact-us-section__grid {
+        display: grid;
+        grid-template-columns: 1fr;
+        padding: 10px;
+    }
+
+    /* contacts end */
+
+
 }
 
 
@@ -472,6 +499,28 @@
     }
 
     /* career l2 end */
+
+
+    /* contact-s */
+
+
+    .contact-us-section {
+        position: relative;
+        bottom: 0;
+        left: 0;
+        transform: translateX(0%);
+        width: 100%;
+    }
+
+    .contact-us-section__grid {
+        display: grid;
+        grid-template-columns: 1fr;
+        padding: 10px;
+    }
+
+
+    /* contacts end */
+
 
 }
 
@@ -587,6 +636,14 @@
     /* soltions l2 */
 
 
+    .solutions-l2-main__grid-content {
+        flex: 1;
+    }
+
+    .solutions-l2-main__grid-img {
+        flex: 1;
+    }
+
     .solutions-l2-card-section__grid {
         gap: 60px;
     }
@@ -618,6 +675,14 @@
 
     /* career end */
 
+    /* contact-us */
+
+
+    .contact-us-section {
+        width: 80%;
+    }
+
+    /* contact-us  end*/
 
 }
 
