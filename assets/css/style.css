@@ -5,7 +5,7 @@
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     list-style: none;
-    font-family: 'montserrat', sans-serif;
+    font-family: -apple-system, system-ui, BlinkMacSystemFont, segoe ui, Helvetica, Arial, sans-serif, apple color emoji, segoe ui emoji, segoe ui symbol;
 }
 
 a {
@@ -43,6 +43,7 @@ h2 {
     font-size: var(--text-xl) !important;
     color: var(--primary-color);
     text-transform: capitalize;
+
 }
 
 h3 {
@@ -66,6 +67,11 @@ p {
     line-height: 1.6;
     color: var(--text-color);
     font-size: clamp(14px, calc(0.875rem + ((1vw - 3.2px) * 0.1266)), 16px);
+}
+
+input[type="text"] {
+    font-size: 16px;
+    color: var(--tertiary-color);
 }
 
 address {

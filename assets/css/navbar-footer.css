@@ -107,6 +107,21 @@
 
 .carts-craft-footer__links ul li a {
     color: var(--text-color);
+    transition: all .3s ease-in-out;
+    font-size: 18px;
+}
+
+.carts-craft-footer__links ul li a:hover {
+    font-weight: bold;
+    transition: all .3s ease-in-out;
+
+
+}
+
+.carts-craft-footer__links ul li a::before {
+    font-weight: bold;
+    transition: all .3s ease-in-out;
+
 }
 
 .footer-tag-line {
