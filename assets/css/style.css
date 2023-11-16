@@ -537,6 +537,7 @@ textarea:focus {
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
     font-size: 18px;
     width: fit-content;
+    cursor: pointer;
 }
 
 /* cta end */
@@ -576,6 +577,7 @@ textarea:focus {
     border: none;
     font-size: 16px;
     width: 15%;
+    cursor: pointer;
 }
 
 
@@ -1511,7 +1513,7 @@ section.carts-craft-why-us {
     padding: 20px;
     position: -webkit-sticky;
     position: sticky;
-    top: 60px;
+    top: 100px;
 }
 
 .career-description-main-description h6 {

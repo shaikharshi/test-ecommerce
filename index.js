@@ -106,8 +106,15 @@ app.get("/careers", (req, res) => {
 
 app.get('/careers/:slug', async (req, res) => {
   const slug = req.params.slug;
-  res.render(slug);
+  arr = ['digital-marketing-specialist', 'ecommerce-account-manager', 'web-developer',]
+  if (arr.includes(slug)) {
+    console.log(true);
+    res.render(slug);
+  } else {
+    res.status(404).send('Page Not Found')
+  }
 });
+
 
 // this is for contact start
 app.post('/contact-us', async (req, res) => {
