@@ -40,6 +40,21 @@
         padding: 1rem;
         margin: 0 auto;
     }
+
+    /* sectionnspacing */
+    .section-gap {
+        margin-bottom: 30px !important;
+    }
+
+    /* sectionnspacing */
+
+    /* news letter */
+    .news-letter-button {
+        width: 34%;
+    }
+
+    /* news letter end */
+
 }
 
 /* Medium (tablet) */
@@ -62,6 +77,90 @@
         padding: 1rem;
         margin: 0 auto;
 
+    }
+}
+
+@media (max-width:576px) {
+    .m-t-20 {
+        margin-top: 10px;
+    }
+
+    .m-t-50 {
+        margin-top: 50px;
+    }
+
+    .m-t-100 {
+        margin-top: 50px !important;
+    }
+
+    .m-t-150 {
+        margin-top: 50px;
+    }
+
+    .m-t-200 {
+        margin-top: 100px;
+    }
+
+    .m-b-20 {
+        margin-bottom: 10px;
+    }
+
+    .m-b-50 {
+        margin-bottom: 50px;
+    }
+
+    .m-b-100 {
+        margin-bottom: 50px !important;
+    }
+
+    .m-b-150 {
+        margin-bottom: 50px;
+    }
+
+    .m-b-200 {
+        margin-bottom: 100px;
+    }
+}
+
+@media (min-width:566px) and (max-width:1023px) {
+    .m-t-20 {
+        margin-top: 15px;
+    }
+
+    .m-t-50 {
+        margin-top: 50px;
+    }
+
+    .m-t-100 {
+        margin-top: 75px !important;
+    }
+
+    .m-t-150 {
+        margin-top: 100px;
+    }
+
+    .m-t-200 {
+        margin-top: 125px;
+    }
+
+    .m-b-20 {
+        margin-bottom: 15px;
+    }
+
+    .m-b-50 {
+        margin-bottom: 50px;
+    }
+
+    .m-b-100 {
+        margin-bottom: 75px !important;
+    }
+
+    .m-b-150 {
+        margin-bottom: 100px;
+    }
+
+    .m-b-200 {
+        margin-bottom: 125px;
     }
 }
 
@@ -142,7 +241,6 @@
     .carts-craft-home-card {
         grid-template-columns: 1fr;
     }
-
 
 
     /* cta */
@@ -268,6 +366,28 @@
 
     /* blog- deatils end */
 
+
+    /* contact us */
+
+    .contact-us {
+        height: auto
+    }
+
+    .contact-us-section {
+        position: static;
+        bottom: 0;
+        left: 0;
+        transform: translateX(0%);
+        width: 100%;
+    }
+
+    .contact-us-section__grid {
+        display: grid;
+        grid-template-columns: 1fr;
+        padding: 10px;
+    }
+
+    /* contact us end */
 
 }
 
@@ -398,23 +518,14 @@
     /* career l2 end */
 
 
-    /* contact-s */
+    /* faq */
 
-    .contact-us-section {
-        position: relative;
-        bottom: 0;
-        left: 0;
-        transform: translateX(0%);
-        width: 100%;
+    .carts-craft-accordian {
+        max-width: 90%;
+        margin: 0 auto;
     }
 
-    .contact-us-section__grid {
-        display: grid;
-        grid-template-columns: 1fr;
-        padding: 10px;
-    }
-
-    /* contacts end */
+    /* faq end */
 
 
 }
@@ -516,26 +627,6 @@
 
     /* career l2 end */
 
-
-    /* contact-s */
-
-
-    .contact-us-section {
-        position: relative;
-        bottom: 0;
-        left: 0;
-        transform: translateX(0%);
-        width: 100%;
-    }
-
-    .contact-us-section__grid {
-        display: grid;
-        grid-template-columns: 1fr;
-        padding: 10px;
-    }
-
-
-    /* contacts end */
 
 
 }

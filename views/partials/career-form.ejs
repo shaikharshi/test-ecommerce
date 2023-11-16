@@ -1,0 +1,36 @@
+<div class="career-description-form">
+    <h5 class="title-gap">FILL DETAILS TO APPLY</h5>
+    <form action="" class="career-form" action="/contact-us" method="post" onsubmit="return validateForm()">
+        <div class="career-form-input">
+            <label>Name*</label>
+            <input type="text" placeholder="Your Name here" name="name" id="name" required autocomplete="off"
+                maxlength="50" oninput="this.value=this.value.replace(/[^a-zA-Z\s]/g,'')" onblur="validateName()">
+            <span id="nameError" class="error-message"></span>
+        </div>
+        <div class="career-form-input-flex">
+            <div class="career-form-input">
+                <label>Email*</label>
+                <input type="email" placeholder="Your Email here" name="email" id="email" required autocomplete="off"
+                    onblur="validateEmail()">
+                <span id="emailError" class="error-message"></span>
+            </div>
+            <div class="career-form-input">
+                <label>Number*</label>
+                <input type="number" placeholder="Your Number here" id="phone" required autocomplete="off" name="phone"
+                    maxlength="15" oninput="this.value=this.value.replace(/[^0-9]/g,'')" onblur="validatePhone()">
+                <span id="phoneError" class="error-message"></span>
+            </div>
+        </div>
+        <div class="career-form-input">
+            <div><label>Bio*</label></div>
+            <textarea name="" rows="7" placeholder="Your Bio here" id="textarea" required autocomplete="off"
+                onblur="validateMessage()"></textarea>
+            <span id="messageError" class="error-message"></span>
+        </div>
+        <div class="career-form-input">
+            <input type="file" class="custom-file-input" id="file">
+            <span id="fileError" class="error-message"></span>
+        </div>
+        <a type="submit" class="service-button"><span>Apply</span></a>
+    </form>
+</div>

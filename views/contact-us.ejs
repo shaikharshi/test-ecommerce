@@ -60,18 +60,29 @@
                 <div class="contact-us-section__grid">
                     <img src="/images/call-to-action.png" alt="">
                     <div class="contact-us-section__grid-content">
-                        <form action="/contact-us" method="post" class="contact-us-form">
+                        <form action="/contact-us" method="post" class="contact-us-form"
+                            onsubmit="return validateForm()">
                             <div class="contact-us-form-input">
                                 <label>Name*</label>
-                                <input type="text" placeholder="Your Name here" name="name">
+                                <input type="text" placeholder="Your Name here" name="name" id="name" required
+                                    autocomplete="off" maxlength="50"
+                                    oninput="this.value=this.value.replace(/[^a-zA-Z\s]/g,'')" onblur="validateName()">
+                                <span id="nameError" class="error-message"></span>
+
                             </div>
                             <div class="contact-us-form-input">
                                 <label>Email*</label>
-                                <input type="email" placeholder="Your Email here" name="email">
+                                <input type="email" placeholder="Your Email here" name="email" id="email" required
+                                    autocomplete="off" onblur="validateEmail()">
+                                <span id="emailError" class="error-message"></span>
+
                             </div>
                             <div class="contact-us-form-input">
                                 <div><label>Message*</label></div>
-                                <textarea name="message" placeholder="Your Bio here"></textarea>
+                                <textarea name="message" placeholder="Your Bio here" id="textarea" required
+                                    autocomplete="off" onblur="validateMessage()"></textarea>
+                                <span id="messageError" class="error-message"></span>
+
                             </div>
                             <button class="submit-button" type="submit">Submit Now</button>
                         </form>

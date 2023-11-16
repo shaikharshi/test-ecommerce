@@ -33,6 +33,48 @@ strong {
 }
 
 
+
+.m-t-20 {
+    margin-top: 20px;
+}
+
+.m-t-50 {
+    margin-top: 50px;
+}
+
+.m-t-100 {
+    margin-top: 100px !important;
+}
+
+.m-t-150 {
+    margin-top: 150px;
+}
+
+.m-t-200 {
+    margin-top: 200px;
+}
+
+.m-b-20 {
+    margin-bottom: 20px;
+}
+
+.m-b-50 {
+    margin-bottom: 50px;
+}
+
+.m-b-100 {
+    margin-bottom: 100px !important;
+}
+
+.m-b-150 {
+    margin-bottom: 150px;
+}
+
+.m-b-200 {
+    margin-bottom: 200px;
+}
+
+
 h1 {
     font-size: var(--text-xxl) !important;
     color: var(--primary-color);
@@ -69,10 +111,6 @@ p {
     font-size: clamp(14px, calc(0.875rem + ((1vw - 3.2px) * 0.1266)), 16px);
 }
 
-input[type="text"] {
-    font-size: 16px;
-    color: var(--tertiary-color);
-}
 
 address {
     line-height: 2;
@@ -158,7 +196,7 @@ textarea:focus {
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
     left: 50%;
     transform: translateX(-50%);
-    bottom: -18px;
+    bottom: -32px;
     font-size: 26px;
     font-weight: 500;
 }
@@ -188,7 +226,7 @@ textarea:focus {
 
 .carts-craft__home-image img {
     width: 100%;
-    height: 432px;
+    height: auto;
     transition: all .3s ease-in-out;
     display: block;
 }
@@ -197,10 +235,10 @@ textarea:focus {
     transform: scale(1.1);
 }
 
-.carts-craft__home-text p {
+.carts-craft__home-text {
     display: flex;
     flex-direction: column;
-    margin: 20px 0;
+    gap: 15px;
 }
 
 
@@ -228,7 +266,7 @@ textarea:focus {
 .carts-craft-home-card__text {
     display: flex;
     flex-direction: column;
-    gap: 25px;
+    gap: 20px;
 }
 
 /* home service card */
@@ -338,7 +376,7 @@ textarea:focus {
 }
 
 .accordion p {
-    font-size: 18px;
+    font-size: clamp(14px, calc(0.875rem + ((1vw - 3.2px) * 0.1266)), 16px);
 }
 
 .panel {
@@ -535,6 +573,8 @@ textarea:focus {
     display: block;
     position: absolute;
     right: 16px;
+    border: none;
+    font-size: 16px;
     width: 15%;
 }
 
@@ -589,10 +629,13 @@ textarea:focus {
     gap: 50px;
     justify-content: center;
     align-items: center;
+
 }
 
-.carts-craft-company-overview p {
-    margin: 20px 0;
+.carts-craft-company-overview {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
 }
 
 .carts-craft-company-overview__grid-img {
@@ -620,6 +663,12 @@ textarea:focus {
     transform: scale(1.1);
 }
 
+section.carts-craft-why-us {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
 
 /* our team */
 .carts-craft-team {
@@ -631,8 +680,10 @@ textarea:focus {
     padding: 50px 0;
 }
 
-.carts-craft-team_content p {
-    margin: 20px 0;
+.carts-craft-team_content {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
 }
 
 .carts-craft-team_image img {
@@ -647,7 +698,6 @@ textarea:focus {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 30px;
-    margin-top: 30px;
 }
 
 .carts-craft-why-us__grid-content {
@@ -718,8 +768,10 @@ textarea:focus {
     height: auto;
 }
 
-.carts-craft-mission__grid-content p {
-    margin: 20px 0;
+.carts-craft-mission__grid-content {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
 }
 
 .carts-craft-mission__grid-content {
@@ -746,8 +798,10 @@ textarea:focus {
     padding: 30px;
 }
 
-.carts-craft-vision__grid-content p {
-    margin: 20px 0;
+.carts-craft-vision__grid-content {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
 }
 
 /* mission vision end */
@@ -777,7 +831,12 @@ textarea:focus {
 .carts-craft-service-main__grid p {
     width: 100%;
     height: auto;
-    margin: 20px 0;
+}
+
+.carts-craft-service-main-content {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
 }
 
 
@@ -794,11 +853,18 @@ textarea:focus {
 .carts-craft-service-grid__card {
     display: flex;
     flex-direction: column;
-    gap: 40px;
+    gap: 20px;
     justify-content: center;
-    align-items: center;
+    /* align-items: center; */
     box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.25);
     padding-bottom: 20px;
+}
+
+.carts-craft-service-grid__card-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
 }
 
 .carts-craft-service-grid__card-img {
@@ -818,7 +884,7 @@ textarea:focus {
 }
 
 .image-overlay p {
-    font-size: 16px;
+    font-size: clamp(12px, calc(0.75rem + ((1vw - 3.2px) * 0.2532)), 16px);
     color: var(--primary-color);
     font-weight: 600;
 }
@@ -923,7 +989,7 @@ textarea:focus {
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
     left: 50%;
     transform: translateX(-50%);
-    bottom: -18px;
+    bottom: -35px;
     font-size: clamp(1rem, calc(1rem + ((1vw - 0.2rem) * 0.8861)), 1.875rem);
     font-weight: 500;
 }
@@ -955,12 +1021,14 @@ textarea:focus {
 
 .ecomm-setup-amzon-listing {
     background-color: var(--secondary-color);
+    padding: 40px 0;
 }
 
-.ecomm-setup-amzon-listing__content p {
-    margin: 20px 0;
+.ecomm-setup-amzon-listing__content {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
 }
-
 
 /* E-commerce Store Setup end */
 
@@ -1022,8 +1090,10 @@ textarea:focus {
     background-color: var(--secondary-color);
 }
 
-.carts-craft-industy-banner-content p {
-    margin: 20px 0;
+.carts-craft-industy-banner-content {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
 }
 
 .carts-craft-industy-main {
@@ -1057,7 +1127,7 @@ textarea:focus {
 .carts-craft-industy-text {
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    gap: 15px;
 }
 
 .industy-color-bg {
@@ -1148,9 +1218,9 @@ textarea:focus {
     gap: 20px;
 }
 
-.blog-details-section__main-update {
+/* .blog-details-section__main-update {
     margin: 40px 0;
-}
+} */
 
 .blog-details-section__main-update span {
     color: var(--primary-color);
@@ -1161,7 +1231,7 @@ textarea:focus {
     flex: 1;
     position: -webkit-sticky;
     position: sticky;
-    top: 60px;
+    top: 100px;
 }
 
 .blog-details-section__related-img img {
@@ -1178,9 +1248,6 @@ textarea:focus {
     font-size: 18px;
 }
 
-.blog-details-section__related-content {
-    margin-top: 70px;
-}
 
 .blog-list li {
     list-style: disc;
@@ -1287,12 +1354,13 @@ textarea:focus {
     text-overflow: ellipsis;
     display: -webkit-box;
     text-align: center;
-    -webkit-line-clamp: 4;
+    -webkit-line-clamp: 3;
     -webkit-box-orient: vertical;
 }
 
 .solutions-l2-content-section {
     background-color: var(--secondary-color);
+    padding: 25px 0;
 }
 
 .solutions-l2-content {
@@ -1441,6 +1509,9 @@ textarea:focus {
     background-color: var(--secondary-color);
     height: fit-content;
     padding: 20px;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 60px;
 }
 
 .career-description-main-description h6 {
@@ -1576,6 +1647,16 @@ label {
     margin-top: 10px;
     border: none;
     border-bottom: 2px solid var(--primary-color);
+}
+
+
+.error-border {
+    border: 1px solid red !important;
+}
+
+.error-message {
+    color: red !important;
+    height: 20px;
 }
 
 /* contact us */

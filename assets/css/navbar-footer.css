@@ -46,7 +46,7 @@
 
 .ecomm-navbar .ecomm-navbar__links a {
     display: block;
-    padding: 27px;
+    padding: 25px;
     font-size: 22px;
     color: var(--tertiary-color);
     text-decoration: none;
@@ -81,6 +81,8 @@
 }
 
 
+
+
 /* footer */
 
 .address p {
@@ -107,13 +109,13 @@
 
 .carts-craft-footer__links ul li a {
     color: var(--text-color);
-    transition: all .3s ease-in-out;
+    transition: all .1s ease-in-out;
     font-size: 18px;
 }
 
 .carts-craft-footer__links ul li a:hover {
     font-weight: bold;
-    transition: all .3s ease-in-out;
+    transition: all .1s ease-in-out;
 
 
 }

@@ -6,7 +6,9 @@
         <div class="input-side">
             <form action="/news-letter" method="post">
                 <div class="input-container">
-                    <input class="news-letter-input" name="email" type="email" placeholder="abc@example.com">
+                    <input class="news-letter-input" name="email" type="email" placeholder="abc@example.com" required
+                        autocomplete="off" onblur="validateEmail()">
+                    <span id="emailError" class="error-message"></span>
                     <button class="news-letter-button" type="submit">Subscribe</button>
                 </div>
             </form>

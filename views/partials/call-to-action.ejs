@@ -3,15 +3,22 @@
         <div class="carts-craft-cta__content">
             <div class="carts-craft__cta__text">
                 <h3 class="title-gap">Call to Action</h3>
-                <form action="/contact-us" method="post">
+                <form action="/contact-us" method="post" onsubmit="return validateForm()">
                     <div class="form-input">
-                        <input type="text" placeholder="Name :" name="name">
+                        <input type="text" placeholder="Name :" name="name" id="name" required autocomplete="off"
+                            maxlength="50" oninput="this.value=this.value.replace(/[^a-zA-Z\s]/g,'')"
+                            onblur="validateName()">
+                        <span id="nameError" class="error-message"></span>
                     </div>
                     <div class="form-input">
-                        <input type="email" placeholder="Enter Your Email :" name="email">
+                        <input type="email" placeholder="Enter Your Email :" name="email" id="email" required
+                            autocomplete="off" onblur="validateEmail()">
+                        <span id="emailError" class="error-message"></span>
                     </div>
                     <div class="form-input">
-                        <textarea name="message" placeholder="Message :" cols="10" rows="2"></textarea>
+                        <textarea name="message" placeholder="Message :" cols="10" rows="2" id="textarea" required
+                            autocomplete="off" onblur="validateMessage()"></textarea>
+                        <span id="messageError" class="error-message"></span>
                     </div>
                     <button class="submit-button" type="submit">Submit Now</button>
                 </form>
