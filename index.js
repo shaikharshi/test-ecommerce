@@ -28,17 +28,34 @@ app.get("/services", (req, res) => {
 
 app.get('/services/:slug', async (req, res) => {
   const slug = req.params.slug;
-  res.render(slug);
+
+  arr = ['ecommerce-store-setup', 'product-listing-optimization', 'inventory-management', 'order-processing-fulfilment', 'customer-support', 'seo-digital-marketing', 'analytics-reporting', 'website-maintenance-updates', 'platform-migration-upgrades', 'marketplace-management', 'custom-development', 'add-campaigns']
+  if (arr.includes(slug)) {
+    console.log(true);
+    res.render(slug);
+  } else {
+    res.status(404).send('Page Not Found')
+  }
 });
+
 
 app.get("/blog", (req, res) => {
   res.render('blog')
 });
 
+
 app.get('/blog/:slug', async (req, res) => {
   const slug = req.params.slug;
-  res.render(slug);
+
+  arr = ['ecommerce-store-setup-compelete-guide', 'maximizing-roi-data-driven-seo-strategies', 'power-social-media-advertising-ecommerce', 'navigating-world-cross-border-ecommerce-tips-international-expansion']
+  if (arr.includes(slug)) {
+    console.log(true);
+    res.render(slug);
+  } else {
+    res.status(404).send('Page Not Found')
+  }
 });
+
 
 
 app.get("/contact-us", (req, res) => {
@@ -49,10 +66,19 @@ app.get("/solutions", (req, res) => {
   res.render('solutions')
 });
 
+
 app.get('/solutions/:slug', async (req, res) => {
   const slug = req.params.slug;
-  res.render(slug);
+
+  arr = ['amazon-management', 'flipkart-management', 'meesho-management', 'jiomart-management', "myntra-management", "alibaba-management", "tatacliq-management", "walmart-management", "indiamart-management"]
+  if (arr.includes(slug)) {
+    console.log(true);
+    res.render(slug);
+  } else {
+    res.status(404).send('Page Not Found')
+  }
 });
+
 
 app.get("/solutions-l2", (req, res) => {
   res.render('solutions-l2')
