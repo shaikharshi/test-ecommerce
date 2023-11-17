@@ -34,7 +34,7 @@ app.get('/services/:slug', async (req, res) => {
     console.log(true);
     res.render(slug);
   } else {
-    res.status(404).send('Page Not Found')
+    res.render('404')
   }
 });
 
@@ -52,7 +52,7 @@ app.get('/blog/:slug', async (req, res) => {
     console.log(true);
     res.render(slug);
   } else {
-    res.status(404).send('Page Not Found')
+    res.render('404')
   }
 });
 
@@ -75,7 +75,7 @@ app.get('/solutions/:slug', async (req, res) => {
     console.log(true);
     res.render(slug);
   } else {
-    res.status(404).send('Page Not Found')
+    res.render('404')
   }
 });
 
@@ -111,7 +111,7 @@ app.get('/careers/:slug', async (req, res) => {
     console.log(true);
     res.render(slug);
   } else {
-    res.status(404).send('Page Not Found')
+    res.render('404')
   }
 });
 

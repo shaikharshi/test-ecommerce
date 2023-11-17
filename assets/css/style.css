@@ -171,7 +171,7 @@ textarea:focus {
     align-items: center;
     height: 345px;
     background-color: var(--secondary-color);
-    /* background-image: url("../images/about-banner.png"); */
+    /* background-image: url("../images/about-banner.webp"); */
 }
 
 .carts-craft__banner {
@@ -1044,10 +1044,6 @@ section.carts-craft-why-us {
     padding: 70px 0;
 }
 
-.terms-of-use p {
-    margin: 20px 0;
-}
-
 .terms-of-use-points li {
     list-style: circle;
     line-height: 1.5;
@@ -1059,6 +1055,13 @@ section.carts-craft-why-us {
 
 .terms-of-use-points li {
     list-style: none;
+    color: var(--text-color);
+    font-size: clamp(14px, calc(0.875rem + ((1vw - 3.2px) * 0.1266)), 16px);
+}
+.terms-of-use{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
 }
 
 
@@ -1067,11 +1070,27 @@ section.carts-craft-why-us {
     color: var(--primary-color);
     display: inline-block;
     width: 1em;
-    margin-left: 2em
+}
+.terms-of-use-main strong{
+    color: var(--text-color);
+    font-weight: 500;
+}
+.terms-of-use-main h5{
+    font-weight: 500;
 }
 
 /* terms of use end */
 
+
+/* privacy policy */
+.privacy-policy{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+
+/* privacy policy end */
 
 /* industies page */
 
@@ -1321,13 +1340,12 @@ section.carts-craft-why-us {
 }
 
 .solutions-l2-card {
-    box-shadow:
-        inset 0 -3em 3em var(--tertiary-color),
-        0 0 0 2px white,
-        0.3em 0.3em 1em var(--primary-color);
+    background-color: var(--secondary-color);
+    box-shadow: var(--primary-color) 0px 3px 8px;
 }
 
 .solutions-l2-card-head {
+    background-color: var(--tertiary-color);
     display: flex;
     gap: 20px;
     align-items: center;
@@ -1347,7 +1365,6 @@ section.carts-craft-why-us {
 }
 
 .solutions-l2-main__grid-content-para {
-    background-color: var(--secondary-color);
     padding: 20px;
 }
 
@@ -1662,3 +1679,30 @@ label {
 }
 
 /* contact us */
+
+
+/* 404 */
+#main{
+    display: table;
+    width: 100%;
+    height: calc(100vh - 80px);
+    text-align: center;
+}
+ 
+.fof{
+	  display: table-cell;
+	  vertical-align: middle;
+}
+
+.fof h1{
+	  font-size: 60px !important;
+	  display: inline-block;
+	  padding-right: 12px;
+	  animation: type .5s alternate infinite;
+}
+
+@keyframes type{
+	  from{box-shadow: inset -3px 0px 0px #888;}
+	  to{box-shadow: inset -3px 0px 0px transparent;}
+}
+/* 404 end */
