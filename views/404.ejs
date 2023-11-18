@@ -46,17 +46,27 @@
 <body>
     <%- include('partials/navbar'); -%>
 
- <div class="page-not-found">
-    <div id="main">
-    	<div class="fof">
-        		<h1>Error 404</h1>
-    	</div>
-</div>
- </div>
+        <main class="error-page">
+            <div class="error-container">
+                <div class="eyes">
+                    <div class="eye">
+                        <div class="eye__pupil eye__pupil--left"></div>
+                    </div>
+                    <div class="eye">
+                        <div class="eye__pupil eye__pupil--right"></div>
+                    </div>
+                </div>
 
-        <%- include('partials/call-to-action'); -%>
-            <%- include('partials/news-letter'); -%>
-                <%- include('partials/footer'); -%>
+                <div class="error-page__heading">
+                    <h1 class="error-page__heading-title">Looks like you're lost</h1>
+                    <p class="error-page__heading-desciption">404 error</p>
+                </div>
+
+                <a class="service-button" href="/" aria-label="back to home" title="back to home">back to home</a>
+            </div>
+        </main>
+
+        <%- include('partials/footer'); -%>
 
 </body>
 

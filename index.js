@@ -115,6 +115,12 @@ app.get('/careers/:slug', async (req, res) => {
   }
 });
 
+// Handling undefined routes - catch-all route
+app.get('*', (req, res) => {
+  res.render('404');
+});
+
+
 
 // this is for contact start
 app.post('/contact-us', async (req, res) => {
