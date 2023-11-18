@@ -487,6 +487,12 @@ textarea:focus {
     -webkit-box-orient: vertical;
 }
 
+.blog-details-section__related-content{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
 /*home blogs end*/
 
 /* cta */
@@ -1272,18 +1278,27 @@ border: 1px solid var(--primary-color);
     top: 100px;
 }
 
+.blog-details-section__related-card{
+    display: flex;
+    flex-direction: column;
+    gap: 45px;
+}
+
 .blog-details-section__related-img img {
     width: 100%;
     height: auto;
 }
 
-.blog-details-section__related-update {
-    margin: 20px 0;
-}
 
-.blog-details-section__related-update span {
+.blog-details-section__related-update span a{
     color: var(--primary-color);
     font-size: 18px;
+}
+
+.blog-details-section__related-update{
+    display: flex;
+    flex-direction: column;
+    gap:10px;
 }
 
 

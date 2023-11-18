@@ -18,8 +18,8 @@ app.get("/", (req, res) => {
   res.render('index')
 });
 
-app.get("/about", (req, res) => {
-  res.render('about')
+app.get("/about-us", (req, res) => {
+  res.render('about-us')
 });
 
 app.get("/services", (req, res) => {
@@ -92,8 +92,8 @@ app.get("/privacy-policy", (req, res) => {
   res.render('privacy-policy')
 });
 
-app.get("/inustries", (req, res) => {
-  res.render('inustries')
+app.get("/industries", (req, res) => {
+  res.render('industries')
 });
 
 app.get("/faq", (req, res) => {
