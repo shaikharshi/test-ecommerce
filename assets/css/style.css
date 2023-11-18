@@ -307,6 +307,7 @@ textarea:focus {
 
 .carts-craft-home-partners {
     background-color: var(--secondary-color);
+    padding-bottom: 30px;
 }
 
 .carts-craft-home-partners__grid {
@@ -421,6 +422,7 @@ textarea:focus {
     display: flex;
     flex-direction: column;
     gap: 30px;
+    border: 1px solid transparent;
     padding: 20px;
     box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.25);
 }
@@ -874,6 +876,7 @@ section.carts-craft-why-us {
     gap: 20px;
     justify-content: center;
     /* align-items: center; */
+    border: 1px solid transparent;
     box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.25);
     padding-bottom: 20px;
 }
