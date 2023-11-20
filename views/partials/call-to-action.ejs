@@ -3,22 +3,25 @@
         <div class="carts-craft-cta__content">
             <div class="carts-craft__cta__text">
                 <h3 class="title-gap">Reach Out</h3>
-                <form action="/contact-us" method="post" onsubmit="return validateForm()">
+                <form action="/contact-us" method="post" onsubmit="return validateForm()" autocomplete="off">
                     <div class="form-input">
-                        <input type="text" placeholder="Name :" name="name" id="name" required autocomplete="off"
+                        <input class="form-field" type="text" placeholder="Name :" name="name" id="name" required autocomplete="off"
                             maxlength="50" oninput="this.value=this.value.replace(/[^a-zA-Z\s]/g,'')"
-                            onblur="validateName()">
+                            onblur="validateName()"/>
+                            <label for="" class="form-label">Name</label>
                         <p id="nameError" class="error-message"></p>
                     </div>
                     <div class="form-input">
-                        <input type="email" placeholder="Enter Your Email :" name="email" id="email" required
+                        <input class="form-field" type="email" placeholder="Enter Your Email :" name="email" id="email" required
                             autocomplete="off" onblur="validateEmail()">
+                            <label for="" class="form-label">Email</label>
                         <p id="emailError" class="error-message"></p>
                     </div>
                     <div class="form-input">
-                        <textarea name="message" placeholder="Message :" cols="10" rows="2" id="textarea" required
+                        <textarea class="form-field" name="message" placeholder="Message :" cols="10" rows="1" id="textarea" required
                             autocomplete="off" onblur="validateMessage()"></textarea>
                         <p id="messageError" class="error-message"></p>
+                        <label for="" class="form-label">Message</label>
                     </div>
                     <button class="submit-button" type="submit">Submit Now</button>
                 </form>

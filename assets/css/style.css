@@ -527,16 +527,17 @@ textarea:focus {
 .form-input textarea {
     background-color: var(--primary-color);
     width: 60%;
-    padding-bottom: 20px;
+    padding-bottom: 10px;
     border: none;
     border-bottom: 2px solid var(--tertiary-color);
     outline: none;
     transition: border-color 0.3s;
+    outline: none;
 }
 
 .form-input input::placeholder,
 .form-input textarea::placeholder {
-    color: var(--tertiary-color);
+    color: transparent;
     font-size: 16px;
     line-height: 1.5;
 }
@@ -550,6 +551,49 @@ textarea:focus {
     font-size: 18px;
     width: fit-content;
     cursor: pointer;
+}
+
+/* Existing styles */
+
+/* Adjustments to the floating label */
+.form-input {
+    position: relative;
+    margin-bottom: 30px;
+}
+
+.form-field {
+    background-color: var(--primary-color);
+    width: 100%;
+    padding-bottom: 20px;
+    border: none;
+    border-bottom: 2px solid var(--tertiary-color);
+    outline: none;
+    transition: border-color 0.3s;
+}
+
+.form-field:focus::placeholder {
+    color: transparent;
+}
+
+.form-label {
+    position: absolute;
+    pointer-events: none;
+    left: 0;
+    /* Adjust as needed */
+    top: 0;
+    /* Adjust as needed */
+    transition: 0.2s ease-out;
+    color: var(--tertiary-color);
+    font-size: 16px;
+    /* Adjust font size as needed */
+    z-index: 1;
+    /* Ensure label is above the input */
+}
+
+.form-field:focus~.form-label,
+.form-field:not(:placeholder-shown)~.form-label {
+    top: -20px;
+    color: var(--tertiary-color);
 }
 
 /* cta end */
@@ -1681,10 +1725,10 @@ label {
     border-bottom: 2px solid var(--primary-color);
 }
 
-
+/* 
 .error-border {
     border: 1px solid red !important;
-}
+} */
 
 .error-message {
     color: red !important;
