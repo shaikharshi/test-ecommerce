@@ -92,6 +92,7 @@
 .carts-craft-footer {
     background-color: var(--secondary-color);
     padding: 60px 0;
+    font-weight: 500;
 }
 
 .carts-craft-footer__footer-grid {
@@ -110,21 +111,14 @@
 .carts-craft-footer__links ul li a {
     color: var(--text-color);
     transition: all .1s ease-in-out;
-    font-size: 18px;
+    font-size: 20px;
 }
 
 .carts-craft-footer__links ul li a:hover {
-    font-weight: bold;
     transition: all .1s ease-in-out;
-
-
+    color: var(--primary-color);
 }
 
-.carts-craft-footer__links ul li a::before {
-    font-weight: bold;
-    transition: all .3s ease-in-out;
-
-}
 
 .footer-tag-line {
     padding-bottom: 20px;

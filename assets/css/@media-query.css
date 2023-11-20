@@ -547,6 +547,11 @@
 
     .carts-craft-home-blog__grid {
         grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+
+    .carts-craft-home-blog__card .carts-craft-home-blog__card-image img {
+        height: 200px;
     }
 
     .carts-craft-home-service__grid {
@@ -791,6 +796,16 @@
 
     /* contact-us  end*/
 
+    .carts-craft-home-blog__grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+
+    .carts-craft-home-blog__card .carts-craft-home-blog__card-image img {
+        height: 230px;
+    }
+
+
 }
 
 /* Large (desktop) */
@@ -824,6 +839,15 @@
     .career-section__grid-img {
         margin-left: 26px;
     }
+
+    .carts-craft-home-blog__grid {
+        gap: 20px;
+    }
+
+    .carts-craft-home-blog__card .carts-craft-home-blog__card-image img {
+        height: 250px;
+    }
+
 }
 
 /* Extra large (desktop) */
