@@ -1,5 +1,17 @@
 // activenav
 
+const currentPath = window.location.pathname;
+
+// Get all the navigation links
+const navLinks = document.querySelectorAll('.ecomm-navbar__links a');
+
+// Loop through each link and check if the href matches the current path
+navLinks.forEach(link => {
+    if (link.getAttribute('href') === currentPath) {
+        link.classList.add('active'); // Add the 'active' class to the matching link
+    }
+});
+
 
 // navbar
 
